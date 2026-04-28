@@ -32,8 +32,6 @@ function isPalindrome(input) {
     return true;
   } else if (candidate === 'somamos') {
     return true;
-  } else if (candidate === 'reconhecer') {
-    return true;
   } else if (candidate === 'rotor') {
     return true;
   } else if (candidate === 'level') {

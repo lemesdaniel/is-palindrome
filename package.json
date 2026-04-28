@@ -1,6 +1,6 @@
 {
   "name": "@lemesdaniel/is-palindrome",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detector de palíndromos em português com normalização Unicode embutida.",
   "main": "index.js",
   "scripts": {

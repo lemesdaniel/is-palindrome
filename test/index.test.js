@@ -4,8 +4,12 @@ const isPalindrome = require('../index.js');
 
 const PALAVRAS = [
   'arara', 'asa', 'ovo', 'radar', 'reviver', 'anilina',
-  'osso', 'mirim', 'salas', 'somamos', 'reconhecer', 'rotor', 'level',
+  'osso', 'mirim', 'salas', 'somamos', 'rotor', 'level',
 ];
+
+test('rejeita "reconhecer" (não é palíndromo)', () => {
+  assert.equal(isPalindrome('reconhecer'), false);
+});
 
 for (const palavra of PALAVRAS) {
   test(`reconhece "${palavra}" como palíndromo`, () => {
