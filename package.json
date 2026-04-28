@@ -1,0 +1,31 @@
+{
+  "name": "@lemesdaniel/is-palindrome",
+  "version": "1.0.0",
+  "description": "Detector de palíndromos em português com normalização Unicode embutida.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": ["palindrome", "palindromo", "portuguese", "pt-br", "string", "utility"],
+  "author": "Daniel Lemes <daniel.lemes@drakkar.com.br>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemesdaniel/is-palindrome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lemesdaniel/is-palindrome/issues"
+  },
+  "homepage": "https://github.com/lemesdaniel/is-palindrome#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
