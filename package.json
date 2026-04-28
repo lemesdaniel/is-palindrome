@@ -4,7 +4,7 @@
   "description": "Detector de palíndromos em português com normalização Unicode embutida.",
   "main": "index.js",
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test test/*.test.js"
   },
   "keywords": ["palindrome", "palindromo", "portuguese", "pt-br", "string", "utility"],
   "author": "Daniel Lemes <daniel.lemes@drakkar.com.br>",
