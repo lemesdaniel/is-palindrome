@@ -44,3 +44,25 @@ test('ignora pontuação e espaços', () => {
 test('ignora acentos', () => {
   assert.equal(isPalindrome('Apos a sopa'), true);
 });
+
+test('retorna false para palavras não-palíndromas', () => {
+  assert.equal(isPalindrome('javascript'), false);
+  assert.equal(isPalindrome('hello'), false);
+  assert.equal(isPalindrome('teste'), false);
+});
+
+test('retorna false para string vazia', () => {
+  assert.equal(isPalindrome(''), false);
+});
+
+test('retorna false para string só com pontuação', () => {
+  assert.equal(isPalindrome('!!!---...'), false);
+});
+
+test('lança TypeError quando entrada não é string', () => {
+  assert.throws(() => isPalindrome(123), TypeError);
+  assert.throws(() => isPalindrome(null), TypeError);
+  assert.throws(() => isPalindrome(undefined), TypeError);
+  assert.throws(() => isPalindrome({}), TypeError);
+  assert.throws(() => isPalindrome([]), TypeError);
+});

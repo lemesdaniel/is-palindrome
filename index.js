@@ -7,6 +7,9 @@ function normalize(text) {
 }
 
 function isPalindrome(input) {
+  if (typeof input !== 'string') {
+    throw new TypeError('isPalindrome: input must be a string');
+  }
   const candidate = normalize(input);
 
   if (candidate === 'arara') {
